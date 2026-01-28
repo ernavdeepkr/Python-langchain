@@ -25,7 +25,7 @@ LangChain is a framework for developing applications powered by language models.
 ## Installation
 
 ```bash
-pip install langchain
+pip install langchain langchain-openai
 ```
 
 ## Getting Started
@@ -35,6 +35,37 @@ To get started with LangChain, you'll need:
 1. **Python 3.8+**
 2. **An API key** for your chosen LLM provider (e.g., OpenAI)
 3. **LangChain library** installed via pip
+
+## Running the Demo
+
+### `langchain_basics.py`
+
+A simple program that demonstrates core LangChain concepts:
+- Initializing a ChatOpenAI model
+- Creating a prompt template with variables
+- Building a chain (`prompt | llm | output parser`)
+- Running the chain and printing the result
+
+**Steps to run:**
+
+1. Install dependencies:
+   ```bash
+   pip install langchain langchain-openai
+   ```
+
+2. Set your OpenAI API key:
+   ```bash
+   # Windows
+   set OPENAI_API_KEY=your-api-key-here
+
+   # Linux/Mac
+   export OPENAI_API_KEY=your-api-key-here
+   ```
+
+3. Run the program:
+   ```bash
+   python langchain_basics.py
+   ```
 
 ## Project Structure
 
